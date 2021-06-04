@@ -1,6 +1,7 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import Fact from './Fact'
+import FactForm from './FactForm'
 
 function Facts() {
 
@@ -22,12 +23,14 @@ function Facts() {
     }
 
     const renderFacts = () => {
-        return facts.map(fact => <Fact key={fact.key} {...fact}/>)
+        return facts.map(fact => <Fact key={fact.id} {...fact}/>)
     }
 
     return (
         <div>
+
             <h1>facts here</h1>
+            <FactForm/>
             {renderFacts()}
         </div>
     )
