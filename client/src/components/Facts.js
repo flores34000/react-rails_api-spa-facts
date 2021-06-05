@@ -25,7 +25,7 @@ function Facts() {
     const renderFacts = () => {
         return facts.map(fact => <Fact key={fact.id} {...fact}/>)
     }
-
+console.log(facts);
     return (
         <div>
 
