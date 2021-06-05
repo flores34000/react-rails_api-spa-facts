@@ -1,9 +1,9 @@
 import React from "react";
-import FactForm from "./FactForm";
+
 
 function Fact(props) {
   const { id, source, username, text } = props;
-  console.log(username);
+  
   return (
     <div className="fact-container">
       <h1>

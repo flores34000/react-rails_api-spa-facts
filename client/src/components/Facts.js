@@ -1,7 +1,4 @@
-import axios from 'axios'
-import React, { useEffect, useState } from 'react'
 import Fact from './Fact'
-import FactForm from './FactForm'
 
 function Facts(props) {
 
@@ -11,7 +8,7 @@ function Facts(props) {
     const renderFacts = () => {
         return facts.map(fact => <Fact key={fact.id} {...fact}/>)
     }
-console.log(facts);
+// console.log(facts);
     return (
         <div>
 
